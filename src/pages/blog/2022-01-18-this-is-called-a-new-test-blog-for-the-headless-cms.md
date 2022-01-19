@@ -6,4 +6,4 @@ description: this is a required field
 featuredpost: true
 featuredimage: static/img/chemex.jpg
 ---
-![](static/img/blog-index.jpg)
+# This is new heading
