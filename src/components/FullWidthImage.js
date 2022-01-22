@@ -14,10 +14,11 @@ export default function FullWidthImage(props) {
   return (
     <React.Fragment>
       <div
-        className="margin-top-0"
+        className="margin-top-0 card"
         style={{
           display: "grid",
           alignItems: "center",
+          overflow: "hidden"
         }}
       >
         {img?.url ? (
@@ -36,6 +37,7 @@ export default function FullWidthImage(props) {
             // This is a presentational image, so the alt should be an empty string
             alt=""
             formats={["auto", "webp", "avif"]}
+            className="card-image"
           />
         ) : (
           <GatsbyImage
@@ -53,6 +55,7 @@ export default function FullWidthImage(props) {
             // This is a presentational image, so the alt should be an empty string
             alt=""
             formats={["auto", "webp", "avif"]}
+            className="card-image"
           />
         )}
         {(title || subheading) && (
@@ -71,9 +74,8 @@ export default function FullWidthImage(props) {
               <h1
                 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
+                 
+                  backgroundColor: "rgb(102 91 87 / 32%)",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25em",
@@ -86,9 +88,8 @@ export default function FullWidthImage(props) {
               <h3
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
+                 
+                  backgroundColor: "rgb(102 91 87 / 32%)",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25rem",

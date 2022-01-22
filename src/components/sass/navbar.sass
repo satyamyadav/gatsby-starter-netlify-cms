@@ -1,0 +1,63 @@
+
+
+
+    
+
+.navbar 
+  
+  .navbar-brand img 
+    height: 28px
+    max-height: 2em
+    width: 112px
+  
+
+  .navbar-start 
+    flex-grow: 1
+  
+
+  .navbar-item,
+  .navbar-link 
+    padding: 0.5em 0.75em
+    border-radius: 0.4em
+    transition: all ease 0.3s 
+    &:hover
+      color: $primary
+      background: $primary-light
+      transition: all ease 0.3s 
+
+
+
+@include desktop() 
+  .navbar 
+    padding: 1rem 2rem
+
+    .navbar-brand .navbar-item:first-child 
+      margin-left: -0.75em
+    
+
+    .navbar-menu 
+      flex-shrink: 1
+    
+
+    .navbar-start 
+      flex-shrink: 1
+    
+
+
+
+@include widescreen() 
+  .navbar 
+    font-size: 1.125rem
+    padding: 2rem 4rem
+
+    .navbar-brand img 
+      height: 36px
+      width: 144px
+    
+  
+
+  .navbar-dropdown 
+    left: 0
+    right: auto
+  
+

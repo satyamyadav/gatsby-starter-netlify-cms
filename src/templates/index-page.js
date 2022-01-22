@@ -22,12 +22,32 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
+      <section className="section section--gradient pt-xl">
         <div className="container">
-          <div className="section">
+          <div className="">
             <div className="columns">
-              <div className="column is-10 is-offset-1">
+
+              <div className="column">
+                <div className="content">
+                  <div className="tile">
+                    <h1 className="title">{mainpitch.title}</h1>
+                  </div>
+                  <div className="tile">
+                    <h3 className="subtitle">{mainpitch.description}</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div className="column">
+                <div className="content">
+                  <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+                </div>
+              </div>
+
+            </div>
+
+            <div className="columns">
+              <div className="column">
                 <div className="content">
                   <div className="content">
                     <div className="tile">
